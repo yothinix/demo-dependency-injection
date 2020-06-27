@@ -16,11 +16,16 @@ public class Client {
 
         System.out.println("============================");
 
+        // Constructor Injection
+//        Dependency dependency = new Dependency();
+//        dependency.setName("Dependency by constructor injection");
+//        Hello hello2 = new Hello(dependency);
+//        System.out.println(hello2.getDependency().getName());
+
+        // Setter Injection
         Dependency dependency = new Dependency();
-        dependency.setName("Dependency by constructor injection");
-
-        Hello hello2 = new Hello(dependency);
-        System.out.println(hello2.getDependency().getName());
-
+        dependency.setName("Dependency by setter injection");
+        hello.setDependency(dependency);
+        System.out.println(hello.getDependency().getName());
     }
 }
