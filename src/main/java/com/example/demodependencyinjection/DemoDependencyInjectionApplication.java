@@ -14,6 +14,10 @@ public class DemoDependencyInjectionApplication {
 
 		System.out.println(human.getName());
 		System.out.println(human.getAnimal().getPetName());
+
+		Human humanNew = new Human();
+
+		System.out.println("human = humanNew :" + (human == humanNew));
 	}
 
 }
