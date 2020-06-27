@@ -4,6 +4,9 @@ public class Hello {
 
     private String message = "Default message";
 
+    public Hello() {
+    }
+
     public Hello(String message) {
         this.message = message;
     }

@@ -3,8 +3,13 @@ package com.example.demodependencyinjection;
 public class Client {
     public static void main(String[] args) {
 
-//        Hello hello = new Hello(); // No Injection
-        Hello hello = new Hello("John"); // Constructor Injection
+        // Constructor Injection
+//        Hello hello = new Hello("John");
+//        String message = hello.getMessage();
+
+        // Setter Injection
+        Hello hello = new Hello();
+        hello.setMessage("James");
         String message = hello.getMessage();
 
         System.out.println("Hello, My name is " + message);
