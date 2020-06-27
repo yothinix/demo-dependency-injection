@@ -15,7 +15,12 @@ public class Client {
         System.out.println("Hello, My name is " + message);
 
         System.out.println("============================");
-        String dependencyName = hello.getDependency().getName();
-        System.out.println(dependencyName);
+
+        Dependency dependency = new Dependency();
+        dependency.setName("Dependency by constructor injection");
+
+        Hello hello2 = new Hello(dependency);
+        System.out.println(hello2.getDependency().getName());
+
     }
 }

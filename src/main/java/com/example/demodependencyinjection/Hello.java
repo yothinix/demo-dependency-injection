@@ -13,6 +13,10 @@ public class Hello {
         this.message = message;
     }
 
+    public Hello(Dependency dependency) {
+        this.dependency = dependency;
+    }
+
     public String getMessage() {
         return message;
     }
