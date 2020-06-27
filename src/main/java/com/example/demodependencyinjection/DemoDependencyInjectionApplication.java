@@ -13,6 +13,7 @@ public class DemoDependencyInjectionApplication {
 		Human human = context.getBean("human", Human.class);
 
 		System.out.println(human.getName());
+		System.out.println(human.getAnimal().getPetName());
 	}
 
 }
