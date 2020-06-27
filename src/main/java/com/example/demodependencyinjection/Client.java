@@ -14,5 +14,8 @@ public class Client {
 
         System.out.println("Hello, My name is " + message);
 
+        System.out.println("============================");
+        String dependencyName = hello.getDependency().getName();
+        System.out.println(dependencyName);
     }
 }
